@@ -1,0 +1,6 @@
+library(dplyr)
+library(lubridate)
+library(stringr)
+dados <- read.csv("AULASR/Pokemon_full.csv")
+head(dados)
+dados %>% filter(grepl("bee",name)|grepl("saur",name))
